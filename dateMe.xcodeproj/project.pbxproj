@@ -21,6 +21,8 @@
 		B569543F1DB8A89F0096DB8D /* Matches.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B569543D1DB8A89F0096DB8D /* Matches.storyboard */; };
 		B56954411DB8A8D50096DB8D /* MatchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56954401DB8A8D50096DB8D /* MatchesTableViewController.swift */; };
 		B56954431DB8AB530096DB8D /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56954421DB8AB530096DB8D /* SwipeViewController.swift */; };
+		B56954471DB8B0400096DB8D /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = B56954461DB8B0400096DB8D /* OverlayView.m */; };
+		B569544B1DB8B06D0096DB8D /* DraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B569544A1DB8B06D0096DB8D /* DraggableView.m */; };
 		B594038E1DB85E8E003E761E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594038D1DB85E8E003E761E /* AppDelegate.swift */; };
 		B59403901DB85E8E003E761E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594038F1DB85E8E003E761E /* ViewController.swift */; };
 		B59403961DB85E8E003E761E /* dateMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B59403941DB85E8E003E761E /* dateMe.xcdatamodeld */; };
@@ -46,6 +48,12 @@
 		B569543E1DB8A89F0096DB8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Matches.storyboard; sourceTree = "<group>"; };
 		B56954401DB8A8D50096DB8D /* MatchesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchesTableViewController.swift; path = Controller/MatchesTableViewController.swift; sourceTree = "<group>"; };
 		B56954421DB8AB530096DB8D /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwipeViewController.swift; path = Controller/SwipeViewController.swift; sourceTree = "<group>"; };
+		B56954451DB8B03F0096DB8D /* dateMe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dateMe-Bridging-Header.h"; sourceTree = "<group>"; };
+		B56954461DB8B0400096DB8D /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
+		B56954481DB8B0540096DB8D /* OverlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
+		B56954491DB8B0640096DB8D /* DraggableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableView.h; sourceTree = "<group>"; };
+		B569544A1DB8B06D0096DB8D /* DraggableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableView.m; sourceTree = "<group>"; };
+		B569544C1DB8B0950096DB8D /* Cast-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Cast-Bridging-Header.h"; sourceTree = "<group>"; };
 		B594038A1DB85E8E003E761E /* dateMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dateMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B594038D1DB85E8E003E761E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B594038F1DB85E8E003E761E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,9 +103,23 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		B56954441DB8B02F0096DB8D /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				B56954451DB8B03F0096DB8D /* dateMe-Bridging-Header.h */,
+				B56954481DB8B0540096DB8D /* OverlayView.h */,
+				B56954461DB8B0400096DB8D /* OverlayView.m */,
+				B56954491DB8B0640096DB8D /* DraggableView.h */,
+				B569544A1DB8B06D0096DB8D /* DraggableView.m */,
+				B569544C1DB8B0950096DB8D /* Cast-Bridging-Header.h */,
+			);
+			name = Cards;
+			sourceTree = "<group>";
+		};
 		B59403811DB85E8E003E761E = {
 			isa = PBXGroup;
 			children = (
+				B56954441DB8B02F0096DB8D /* Cards */,
 				B594038C1DB85E8E003E761E /* dateMe */,
 				B594038B1DB85E8E003E761E /* Products */,
 				22E0B7E4046A5EF3C2C52366 /* Pods */,
@@ -174,6 +196,7 @@
 					B59403891DB85E8E003E761E = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = F35T3HFQ4T;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -266,12 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B569544B1DB8B06D0096DB8D /* DraggableView.m in Sources */,
 				B56954411DB8A8D50096DB8D /* MatchesTableViewController.swift in Sources */,
 				B59403901DB85E8E003E761E /* ViewController.swift in Sources */,
 				B59403961DB85E8E003E761E /* dateMe.xcdatamodeld in Sources */,
 				B569543C1DB89EC60096DB8D /* aboutMeViewController.swift in Sources */,
 				B56954211DB86A310096DB8D /* Session.swift in Sources */,
 				B569541D1DB866970096DB8D /* SignUpViewController.swift in Sources */,
+				B56954471DB8B0400096DB8D /* OverlayView.m in Sources */,
 				B569542D1DB875000096DB8D /* User.swift in Sources */,
 				B594038E1DB85E8E003E761E /* AppDelegate.swift in Sources */,
 				B56954381DB879500096DB8D /* ProfileViewController.swift in Sources */,
@@ -426,11 +451,14 @@
 			baseConfigurationReference = 85D5ECE3449A4A7153621AAC /* Pods-dateMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = F35T3HFQ4T;
 				INFOPLIST_FILE = dateMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.raphaellim.dateMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "dateMe-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -440,11 +468,13 @@
 			baseConfigurationReference = 2F291BAD0B62BEDB9C2E8E23 /* Pods-dateMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = F35T3HFQ4T;
 				INFOPLIST_FILE = dateMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.raphaellim.dateMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "dateMe-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
