@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3CB618CE7D39604EEEE5AABB /* Pods_dateMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8154806DF4BD0A4BE5695B0A /* Pods_dateMe.framework */; };
 		B569541D1DB866970096DB8D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B569541C1DB866970096DB8D /* SignUpViewController.swift */; };
+		B569541F1DB869910096DB8D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B569541E1DB869910096DB8D /* DataService.swift */; };
+		B56954211DB86A310096DB8D /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56954201DB86A310096DB8D /* Session.swift */; };
 		B594038E1DB85E8E003E761E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594038D1DB85E8E003E761E /* AppDelegate.swift */; };
 		B59403901DB85E8E003E761E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594038F1DB85E8E003E761E /* ViewController.swift */; };
 		B59403931DB85E8E003E761E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59403911DB85E8E003E761E /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 		8154806DF4BD0A4BE5695B0A /* Pods_dateMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dateMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D5ECE3449A4A7153621AAC /* Pods-dateMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dateMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dateMe/Pods-dateMe.debug.xcconfig"; sourceTree = "<group>"; };
 		B569541C1DB866970096DB8D /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = Controller/SignUpViewController.swift; sourceTree = "<group>"; };
+		B569541E1DB869910096DB8D /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataService.swift; path = Models/DataService.swift; sourceTree = "<group>"; };
+		B56954201DB86A310096DB8D /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		B594038A1DB85E8E003E761E /* dateMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dateMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B594038D1DB85E8E003E761E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B594038F1DB85E8E003E761E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B56954221DB86A4D0096DB8D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B569541E1DB869910096DB8D /* DataService.swift */,
+				B56954201DB86A310096DB8D /* Session.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		B59403811DB85E8E003E761E = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +100,7 @@
 				B594038D1DB85E8E003E761E /* AppDelegate.swift */,
 				B594038F1DB85E8E003E761E /* ViewController.swift */,
 				B569541C1DB866970096DB8D /* SignUpViewController.swift */,
+				B56954221DB86A4D0096DB8D /* Models */,
 				B59403911DB85E8E003E761E /* Main.storyboard */,
 				B59403971DB85E8E003E761E /* Assets.xcassets */,
 				B59403991DB85E8F003E761E /* LaunchScreen.storyboard */,
@@ -224,8 +238,10 @@
 			files = (
 				B59403901DB85E8E003E761E /* ViewController.swift in Sources */,
 				B59403961DB85E8E003E761E /* dateMe.xcdatamodeld in Sources */,
+				B56954211DB86A310096DB8D /* Session.swift in Sources */,
 				B569541D1DB866970096DB8D /* SignUpViewController.swift in Sources */,
 				B594038E1DB85E8E003E761E /* AppDelegate.swift in Sources */,
+				B569541F1DB869910096DB8D /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
