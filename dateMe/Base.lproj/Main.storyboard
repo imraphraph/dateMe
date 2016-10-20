@@ -42,7 +42,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ai-wT-t8T">
                                 <constraints>
@@ -148,7 +148,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKE-q1-JQf">
                                 <constraints>
@@ -207,43 +207,25 @@
             </objects>
             <point key="canvasLocation" x="1009" y="892"/>
         </scene>
-        <!--Profile-->
-        <scene sceneID="lmp-bL-PTU">
+        <!--Swipe-->
+        <scene sceneID="Dpf-xB-i4t">
             <objects>
-                <viewController title="Profile" id="uMh-e0-iGy" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3yc-SU-eES"/>
-                        <viewControllerLayoutGuide type="bottom" id="6CY-I3-b7q"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="IHQ-tD-XZ4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="3f3-rf-gEo"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yCN-Td-o5k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Swipe" id="UV0-E8-y1S" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="GDD-eo-NVG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ofk-g6-gy5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2750" y="466"/>
+            <point key="canvasLocation" x="2733" y="-15"/>
         </scene>
-        <!--Matches-->
-        <scene sceneID="2vJ-ng-wFt">
+        <!--Profile-->
+        <scene sceneID="PzS-mY-kJC">
             <objects>
-                <viewController title="Matches" id="zal-Ud-vdl" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Rga-NH-bDa"/>
-                        <viewControllerLayoutGuide type="bottom" id="5L4-yw-bRc"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="miW-bb-O1B">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="nqE-7H-qd9"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hnQ-IV-ySU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Profile" id="oPh-2D-A9G" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="YaH-wX-g5R"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oZR-Zd-NFB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2750" y="-188"/>
+            <point key="canvasLocation" x="2687" y="306"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Eom-gB-aKH">
@@ -255,8 +237,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="zal-Ud-vdl" kind="relationship" relationship="viewControllers" id="Dyk-4r-zHp"/>
-                        <segue destination="uMh-e0-iGy" kind="relationship" relationship="viewControllers" id="LPA-TB-SEk"/>
+                        <segue destination="UV0-E8-y1S" kind="relationship" relationship="viewControllers" id="JVr-kd-Kek"/>
+                        <segue destination="oPh-2D-A9G" kind="relationship" relationship="viewControllers" id="b1Y-sg-Hj2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T0m-HC-bgF" userLabel="First Responder" sceneMemberID="firstResponder"/>

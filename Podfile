@@ -7,4 +7,9 @@ target 'dateMe' do
 
   # Pods for dateMe
 pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'FirebaseDatabase'
+pod 'Firebase/Storage'
+pod 'SDWebImage', '~>3.8'
+pod 'UIActivityIndicator-for-SDWebImage'
 end

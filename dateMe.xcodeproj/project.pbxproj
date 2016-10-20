@@ -11,9 +11,13 @@
 		B569541D1DB866970096DB8D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B569541C1DB866970096DB8D /* SignUpViewController.swift */; };
 		B569541F1DB869910096DB8D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B569541E1DB869910096DB8D /* DataService.swift */; };
 		B56954211DB86A310096DB8D /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56954201DB86A310096DB8D /* Session.swift */; };
+		B56954251DB8706C0096DB8D /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56954231DB8706C0096DB8D /* Profile.storyboard */; };
+		B56954281DB870930096DB8D /* Swipe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56954261DB870930096DB8D /* Swipe.storyboard */; };
+		B569542D1DB875000096DB8D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B569542C1DB875000096DB8D /* User.swift */; };
+		B56954341DB8782E0096DB8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56954321DB8782E0096DB8D /* Main.storyboard */; };
+		B56954381DB879500096DB8D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56954371DB879500096DB8D /* ProfileViewController.swift */; };
 		B594038E1DB85E8E003E761E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594038D1DB85E8E003E761E /* AppDelegate.swift */; };
 		B59403901DB85E8E003E761E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594038F1DB85E8E003E761E /* ViewController.swift */; };
-		B59403931DB85E8E003E761E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59403911DB85E8E003E761E /* Main.storyboard */; };
 		B59403961DB85E8E003E761E /* dateMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B59403941DB85E8E003E761E /* dateMe.xcdatamodeld */; };
 		B59403981DB85E8E003E761E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B59403971DB85E8E003E761E /* Assets.xcassets */; };
 		B594039B1DB85E8F003E761E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59403991DB85E8F003E761E /* LaunchScreen.storyboard */; };
@@ -27,10 +31,14 @@
 		B569541C1DB866970096DB8D /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = Controller/SignUpViewController.swift; sourceTree = "<group>"; };
 		B569541E1DB869910096DB8D /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataService.swift; path = Models/DataService.swift; sourceTree = "<group>"; };
 		B56954201DB86A310096DB8D /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		B56954241DB8706C0096DB8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
+		B56954271DB870930096DB8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Swipe.storyboard; sourceTree = "<group>"; };
+		B569542C1DB875000096DB8D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
+		B56954331DB8782E0096DB8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B56954371DB879500096DB8D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Controller/ProfileViewController.swift; sourceTree = "<group>"; };
 		B594038A1DB85E8E003E761E /* dateMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dateMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B594038D1DB85E8E003E761E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B594038F1DB85E8E003E761E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B59403921DB85E8E003E761E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B59403951DB85E8E003E761E /* dateMe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dateMe.xcdatamodel; sourceTree = "<group>"; };
 		B59403971DB85E8E003E761E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B594039A1DB85E8F003E761E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,9 +79,17 @@
 			isa = PBXGroup;
 			children = (
 				B569541E1DB869910096DB8D /* DataService.swift */,
+				B569542C1DB875000096DB8D /* User.swift */,
 				B56954201DB86A310096DB8D /* Session.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		B569542B1DB874E00096DB8D /* Swipe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Swipe;
 			sourceTree = "<group>";
 		};
 		B59403811DB85E8E003E761E = {
@@ -97,11 +113,15 @@
 		B594038C1DB85E8E003E761E /* dateMe */ = {
 			isa = PBXGroup;
 			children = (
+				B56954371DB879500096DB8D /* ProfileViewController.swift */,
 				B594038D1DB85E8E003E761E /* AppDelegate.swift */,
 				B594038F1DB85E8E003E761E /* ViewController.swift */,
 				B569541C1DB866970096DB8D /* SignUpViewController.swift */,
+				B569542B1DB874E00096DB8D /* Swipe */,
 				B56954221DB86A4D0096DB8D /* Models */,
-				B59403911DB85E8E003E761E /* Main.storyboard */,
+				B56954261DB870930096DB8D /* Swipe.storyboard */,
+				B56954231DB8706C0096DB8D /* Profile.storyboard */,
+				B56954321DB8782E0096DB8D /* Main.storyboard */,
 				B59403971DB85E8E003E761E /* Assets.xcassets */,
 				B59403991DB85E8F003E761E /* LaunchScreen.storyboard */,
 				B594039C1DB85E8F003E761E /* Info.plist */,
@@ -176,8 +196,10 @@
 			files = (
 				B594039B1DB85E8F003E761E /* LaunchScreen.storyboard in Resources */,
 				B59403A31DB85F67003E761E /* GoogleService-Info.plist in Resources */,
+				B56954251DB8706C0096DB8D /* Profile.storyboard in Resources */,
+				B56954341DB8782E0096DB8D /* Main.storyboard in Resources */,
 				B59403981DB85E8E003E761E /* Assets.xcassets in Resources */,
-				B59403931DB85E8E003E761E /* Main.storyboard in Resources */,
+				B56954281DB870930096DB8D /* Swipe.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +262,9 @@
 				B59403961DB85E8E003E761E /* dateMe.xcdatamodeld in Sources */,
 				B56954211DB86A310096DB8D /* Session.swift in Sources */,
 				B569541D1DB866970096DB8D /* SignUpViewController.swift in Sources */,
+				B569542D1DB875000096DB8D /* User.swift in Sources */,
 				B594038E1DB85E8E003E761E /* AppDelegate.swift in Sources */,
+				B56954381DB879500096DB8D /* ProfileViewController.swift in Sources */,
 				B569541F1DB869910096DB8D /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,10 +272,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B59403911DB85E8E003E761E /* Main.storyboard */ = {
+		B56954231DB8706C0096DB8D /* Profile.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B59403921DB85E8E003E761E /* Base */,
+				B56954241DB8706C0096DB8D /* Base */,
+			);
+			name = Profile.storyboard;
+			sourceTree = "<group>";
+		};
+		B56954261DB870930096DB8D /* Swipe.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B56954271DB870930096DB8D /* Base */,
+			);
+			name = Swipe.storyboard;
+			sourceTree = "<group>";
+		};
+		B56954321DB8782E0096DB8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B56954331DB8782E0096DB8D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
