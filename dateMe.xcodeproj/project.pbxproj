@@ -23,6 +23,9 @@
 		B56954431DB8AB530096DB8D /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56954421DB8AB530096DB8D /* SwipeViewController.swift */; };
 		B56954471DB8B0400096DB8D /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = B56954461DB8B0400096DB8D /* OverlayView.m */; };
 		B569544B1DB8B06D0096DB8D /* DraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B569544A1DB8B06D0096DB8D /* DraggableView.m */; };
+		B569544F1DB8B2380096DB8D /* DraggableViewBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = B569544E1DB8B2380096DB8D /* DraggableViewBackground.m */; };
+		B56954511DB8B5E10096DB8D /* dateMeViewBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56954501DB8B5E10096DB8D /* dateMeViewBackground.swift */; };
+		B56954531DB8BC0E0096DB8D /* SearchOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56954521DB8BC0E0096DB8D /* SearchOptionViewController.swift */; };
 		B594038E1DB85E8E003E761E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594038D1DB85E8E003E761E /* AppDelegate.swift */; };
 		B59403901DB85E8E003E761E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594038F1DB85E8E003E761E /* ViewController.swift */; };
 		B59403961DB85E8E003E761E /* dateMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B59403941DB85E8E003E761E /* dateMe.xcdatamodeld */; };
@@ -53,7 +56,10 @@
 		B56954481DB8B0540096DB8D /* OverlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
 		B56954491DB8B0640096DB8D /* DraggableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableView.h; sourceTree = "<group>"; };
 		B569544A1DB8B06D0096DB8D /* DraggableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableView.m; sourceTree = "<group>"; };
-		B569544C1DB8B0950096DB8D /* Cast-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Cast-Bridging-Header.h"; sourceTree = "<group>"; };
+		B569544D1DB8B2380096DB8D /* DraggableViewBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableViewBackground.h; sourceTree = "<group>"; };
+		B569544E1DB8B2380096DB8D /* DraggableViewBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableViewBackground.m; sourceTree = "<group>"; };
+		B56954501DB8B5E10096DB8D /* dateMeViewBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = dateMeViewBackground.swift; path = Models/dateMeViewBackground.swift; sourceTree = "<group>"; };
+		B56954521DB8BC0E0096DB8D /* SearchOptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchOptionViewController.swift; path = Controller/SearchOptionViewController.swift; sourceTree = "<group>"; };
 		B594038A1DB85E8E003E761E /* dateMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dateMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B594038D1DB85E8E003E761E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B594038F1DB85E8E003E761E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +105,7 @@
 				B569541E1DB869910096DB8D /* DataService.swift */,
 				B569542C1DB875000096DB8D /* User.swift */,
 				B56954201DB86A310096DB8D /* Session.swift */,
+				B56954501DB8B5E10096DB8D /* dateMeViewBackground.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -111,7 +118,8 @@
 				B56954461DB8B0400096DB8D /* OverlayView.m */,
 				B56954491DB8B0640096DB8D /* DraggableView.h */,
 				B569544A1DB8B06D0096DB8D /* DraggableView.m */,
-				B569544C1DB8B0950096DB8D /* Cast-Bridging-Header.h */,
+				B569544D1DB8B2380096DB8D /* DraggableViewBackground.h */,
+				B569544E1DB8B2380096DB8D /* DraggableViewBackground.m */,
 			);
 			name = Cards;
 			sourceTree = "<group>";
@@ -142,6 +150,7 @@
 				B569541C1DB866970096DB8D /* SignUpViewController.swift */,
 				B594038F1DB85E8E003E761E /* ViewController.swift */,
 				B56954421DB8AB530096DB8D /* SwipeViewController.swift */,
+				B56954521DB8BC0E0096DB8D /* SearchOptionViewController.swift */,
 				B56954371DB879500096DB8D /* ProfileViewController.swift */,
 				B56954391DB890200096DB8D /* EditProfileViewController.swift */,
 				B569543B1DB89EC60096DB8D /* aboutMeViewController.swift */,
@@ -289,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56954511DB8B5E10096DB8D /* dateMeViewBackground.swift in Sources */,
 				B569544B1DB8B06D0096DB8D /* DraggableView.m in Sources */,
 				B56954411DB8A8D50096DB8D /* MatchesTableViewController.swift in Sources */,
 				B59403901DB85E8E003E761E /* ViewController.swift in Sources */,
@@ -298,11 +308,13 @@
 				B569541D1DB866970096DB8D /* SignUpViewController.swift in Sources */,
 				B56954471DB8B0400096DB8D /* OverlayView.m in Sources */,
 				B569542D1DB875000096DB8D /* User.swift in Sources */,
+				B569544F1DB8B2380096DB8D /* DraggableViewBackground.m in Sources */,
 				B594038E1DB85E8E003E761E /* AppDelegate.swift in Sources */,
 				B56954381DB879500096DB8D /* ProfileViewController.swift in Sources */,
 				B569541F1DB869910096DB8D /* DataService.swift in Sources */,
 				B569543A1DB890200096DB8D /* EditProfileViewController.swift in Sources */,
 				B56954431DB8AB530096DB8D /* SwipeViewController.swift in Sources */,
+				B56954531DB8BC0E0096DB8D /* SearchOptionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -68,6 +68,17 @@
                                     <constraint firstAttribute="height" constant="128" id="yO8-fM-Vyh"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ph-k9-zko">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="31Q-4p-F78"/>
+                                </constraints>
+                                <state key="normal" title="log out">
+                                    <color key="titleColor" red="1" green="0.037429042764917875" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOutButton:" destination="kIc-Pd-bd2" eventType="touchUpInside" id="Dl8-DP-mjG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -79,7 +90,9 @@
                             <constraint firstItem="RLa-oh-kZN" firstAttribute="leading" secondItem="xdV-rT-gVk" secondAttribute="leadingMargin" id="BvH-VK-5dZ"/>
                             <constraint firstItem="j0v-ib-WSg" firstAttribute="top" secondItem="u7z-L1-U8J" secondAttribute="bottom" constant="10" id="Ec8-xb-rwn"/>
                             <constraint firstItem="u7z-L1-U8J" firstAttribute="top" secondItem="yFF-Ti-2Ao" secondAttribute="bottom" constant="30" id="EdF-d5-iZB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2ph-k9-zko" secondAttribute="trailing" id="Ekc-Tv-dUx"/>
                             <constraint firstItem="yFF-Ti-2Ao" firstAttribute="centerX" secondItem="xdV-rT-gVk" secondAttribute="centerX" id="RtV-Tw-5Zr"/>
+                            <constraint firstItem="2ph-k9-zko" firstAttribute="leading" secondItem="xdV-rT-gVk" secondAttribute="leadingMargin" id="V5m-mg-lru"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RLa-oh-kZN" secondAttribute="trailing" id="Z1p-mv-8E7"/>
                             <constraint firstItem="JcF-E0-ciz" firstAttribute="top" secondItem="j0v-ib-WSg" secondAttribute="bottom" constant="10" id="boG-gQ-fS6"/>
                             <constraint firstItem="kJx-FI-gYg" firstAttribute="top" secondItem="yFF-Ti-2Ao" secondAttribute="bottom" constant="10" id="cWr-tl-KBl"/>
@@ -88,6 +101,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="kJx-FI-gYg" secondAttribute="trailing" id="rwN-xc-GWp"/>
                             <constraint firstItem="j0v-ib-WSg" firstAttribute="leading" secondItem="xdV-rT-gVk" secondAttribute="leadingMargin" id="tB7-h3-dI6"/>
                             <constraint firstItem="kJx-FI-gYg" firstAttribute="leading" secondItem="xdV-rT-gVk" secondAttribute="leadingMargin" id="vdN-PC-y8V"/>
+                            <constraint firstItem="2ph-k9-zko" firstAttribute="top" secondItem="RLa-oh-kZN" secondAttribute="bottom" constant="8" id="zZL-Z2-6MI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Wwc-uj-gCf"/>

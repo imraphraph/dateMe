@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseDatabase
 import SDWebImage
-
+import FirebaseAuth
 
 class ProfileViewController: UIViewController {
 
@@ -72,6 +72,18 @@ class ProfileViewController: UIViewController {
     @IBAction func editButton(_ sender: AnyObject) {
         
     performSegue(withIdentifier: "editSegue", sender: self)
+        
+    }
+    
+    @IBAction func logOutButton(_ sender: AnyObject) {
+        
+        try! FIRAuth.auth()!.signOut()
+        UserDefaults.standard.removeObject(forKey: Session.sessionKey)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle:  Bundle.main)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "ViewController")
+        
+        self.present(viewController, animated: true, completion: nil)
         
     }
  
