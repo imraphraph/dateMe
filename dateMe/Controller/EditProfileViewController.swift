@@ -136,7 +136,16 @@ class EditProfileViewController: UIViewController, UITextFieldDelegate, UIImageP
         
     }
 
+    @IBAction func bioButton(_ sender: AnyObject) {
+        
+        performSegue(withIdentifier: "bioSegue", sender: self)
+        
+    }
+
     @IBAction func saveButton(_ sender: AnyObject) {
+        
+        
+        
     }
    
     @IBAction func backButton(_ sender: AnyObject) {

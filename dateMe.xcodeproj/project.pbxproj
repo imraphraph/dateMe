@@ -117,8 +117,8 @@
 		B594038C1DB85E8E003E761E /* dateMe */ = {
 			isa = PBXGroup;
 			children = (
-				B56954371DB879500096DB8D /* ProfileViewController.swift */,
 				B594038D1DB85E8E003E761E /* AppDelegate.swift */,
+				B56954371DB879500096DB8D /* ProfileViewController.swift */,
 				B56954391DB890200096DB8D /* EditProfileViewController.swift */,
 				B594038F1DB85E8E003E761E /* ViewController.swift */,
 				B569541C1DB866970096DB8D /* SignUpViewController.swift */,
