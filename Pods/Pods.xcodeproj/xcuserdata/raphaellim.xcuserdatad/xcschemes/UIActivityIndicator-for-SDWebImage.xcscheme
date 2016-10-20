@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '96656D6FDA2D4E56DEEA184FE8ADF27F'
-               BlueprintName = 'Pods-dateMe'
+               BlueprintIdentifier = '9D655F985FF8541B36FA165F2F019FC9'
+               BlueprintName = 'UIActivityIndicator-for-SDWebImage'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods-dateMe.framework'>
+               BuildableName = 'UIActivityIndicator-for-SDWebImage.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
