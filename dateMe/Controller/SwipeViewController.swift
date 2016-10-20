@@ -19,11 +19,10 @@ class SwipeViewController: UIViewController {
         
         super.viewDidLoad()
         
-        loadUser()
         
+        loadUser()
         self.draggableViewBackground = dateMeViewBackground(frame:self.view.frame)
         self.view.addSubview(self.draggableViewBackground)
-
 
     }
     
@@ -43,6 +42,8 @@ class SwipeViewController: UIViewController {
     @IBAction func settingsButton(_ sender: AnyObject) {
         
         performSegue(withIdentifier: "editSwipeSegue", sender: self)
+        
     }
+
 
 }

@@ -26,6 +26,7 @@
 		B569544F1DB8B2380096DB8D /* DraggableViewBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = B569544E1DB8B2380096DB8D /* DraggableViewBackground.m */; };
 		B56954511DB8B5E10096DB8D /* dateMeViewBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56954501DB8B5E10096DB8D /* dateMeViewBackground.swift */; };
 		B56954531DB8BC0E0096DB8D /* SearchOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56954521DB8BC0E0096DB8D /* SearchOptionViewController.swift */; };
+		B56954591DB8CAE30096DB8D /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56954571DB8CAE30096DB8D /* Search.storyboard */; };
 		B594038E1DB85E8E003E761E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594038D1DB85E8E003E761E /* AppDelegate.swift */; };
 		B59403901DB85E8E003E761E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594038F1DB85E8E003E761E /* ViewController.swift */; };
 		B59403961DB85E8E003E761E /* dateMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B59403941DB85E8E003E761E /* dateMe.xcdatamodeld */; };
@@ -60,6 +61,7 @@
 		B569544E1DB8B2380096DB8D /* DraggableViewBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableViewBackground.m; sourceTree = "<group>"; };
 		B56954501DB8B5E10096DB8D /* dateMeViewBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = dateMeViewBackground.swift; path = Models/dateMeViewBackground.swift; sourceTree = "<group>"; };
 		B56954521DB8BC0E0096DB8D /* SearchOptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchOptionViewController.swift; path = Controller/SearchOptionViewController.swift; sourceTree = "<group>"; };
+		B56954581DB8CAE30096DB8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Search.storyboard; sourceTree = "<group>"; };
 		B594038A1DB85E8E003E761E /* dateMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dateMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B594038D1DB85E8E003E761E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B594038F1DB85E8E003E761E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				B56954221DB86A4D0096DB8D /* Models */,
 				B56954321DB8782E0096DB8D /* Main.storyboard */,
 				B56954261DB870930096DB8D /* Swipe.storyboard */,
+				B56954571DB8CAE30096DB8D /* Search.storyboard */,
 				B569543D1DB8A89F0096DB8D /* Matches.storyboard */,
 				B56954231DB8706C0096DB8D /* Profile.storyboard */,
 				B59403971DB85E8E003E761E /* Assets.xcassets */,
@@ -239,6 +242,7 @@
 				B56954341DB8782E0096DB8D /* Main.storyboard in Resources */,
 				B59403981DB85E8E003E761E /* Assets.xcassets in Resources */,
 				B56954281DB870930096DB8D /* Swipe.storyboard in Resources */,
+				B56954591DB8CAE30096DB8D /* Search.storyboard in Resources */,
 				B569543F1DB8A89F0096DB8D /* Matches.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +357,14 @@
 			name = Matches.storyboard;
 			sourceTree = "<group>";
 		};
+		B56954571DB8CAE30096DB8D /* Search.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B56954581DB8CAE30096DB8D /* Base */,
+			);
+			name = Search.storyboard;
+			sourceTree = "<group>";
+		};
 		B59403991DB85E8F003E761E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -464,6 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = F35T3HFQ4T;
 				INFOPLIST_FILE = dateMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -481,6 +494,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = F35T3HFQ4T;
 				INFOPLIST_FILE = dateMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

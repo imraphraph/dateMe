@@ -4,6 +4,8 @@
 <dict>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
+	<key>FirebaseAppDelegateProxyEnabled</key>
+	<string>NO</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Adding Photo</string>
 	<key>NSLocationAlwaysUsageDescription</key>
