@@ -3,13 +3,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Swipe-->
         <scene sceneID="uhD-fe-3aV">
             <objects>
-                <viewController title="Swipe" id="dFS-Rh-Z2M" sceneMemberID="viewController">
+                <viewController title="Swipe" id="dFS-Rh-Z2M" customClass="SwipeViewController" customModule="dateMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KeA-K8-0an"/>
                         <viewControllerLayoutGuide type="bottom" id="TyK-zd-sT5"/>
@@ -18,21 +19,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swipe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbh-if-Tbe">
-                                <frame key="frameInset" minX="166" minY="43" width="47" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5Q-bo-i7H">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="DWa-Ro-EJ0"/>
+                                    <constraint firstAttribute="height" constant="44" id="i0j-Ma-K8g"/>
+                                </constraints>
+                                <state key="normal" title="settings" image="Horizontal Settings Mixer-96"/>
+                                <connections>
+                                    <action selector="settingsButton:" destination="dFS-Rh-Z2M" eventType="touchUpInside" id="eYm-EJ-8lB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="dateMe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbh-if-Tbe">
+                                <frame key="frameInset" minX="158" minY="32" width="58" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="SmB-fV-3cM"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.91662660259999995" green="0.123968289" blue="0.096340829000000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="I5Q-bo-i7H" firstAttribute="leading" secondItem="Mca-JU-TI0" secondAttribute="leadingMargin" id="VX2-2v-xKu"/>
+                            <constraint firstItem="Kbh-if-Tbe" firstAttribute="centerX" secondItem="Mca-JU-TI0" secondAttribute="centerX" id="aJD-bh-eqQ"/>
+                            <constraint firstItem="I5Q-bo-i7H" firstAttribute="top" secondItem="KeA-K8-0an" secondAttribute="bottom" id="jWY-2k-H6W"/>
+                            <constraint firstItem="Kbh-if-Tbe" firstAttribute="top" secondItem="KeA-K8-0an" secondAttribute="bottom" constant="15" id="mfr-H3-DLs"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="asA-Yq-xTS"/>
+                    <connections>
+                        <segue destination="Cr3-CS-zjw" kind="presentation" identifier="editSwipeSegue" id="y8z-Wq-FhT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pUE-eL-91N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="999.20000000000005" y="61.619190404797607"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="tby-Fp-UoH">
+            <objects>
+                <viewController id="Cr3-CS-zjw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7vX-kJ-Dz1"/>
+                        <viewControllerLayoutGuide type="bottom" id="XX8-sc-IZu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z1E-km-XpD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="koe-8b-qA2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1793" y="62"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Horizontal Settings Mixer-96" width="96" height="96"/>
+    </resources>
 </document>

@@ -19,12 +19,14 @@ class EditProfileViewController: UIViewController, UITextFieldDelegate, UIImageP
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var profileImage: UIImageView!
     
-    var gender : String = ""
+    var fireBaseRef = FIRDatabase.database().reference()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         usernameTextField.delegate = self
+        genderTextField.delegate = self
         
         retrieveProfileImage()
         loadUserData()
@@ -32,11 +34,13 @@ class EditProfileViewController: UIViewController, UITextFieldDelegate, UIImageP
         profileImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(selectProfileImage)))
         profileImage.isUserInteractionEnabled = true
 
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(EditProfileViewController.dismissKeyboard)))
         
     }
     
     func dismissKeyboard() {
         usernameTextField.resignFirstResponder()
+        genderTextField.resignFirstResponder()
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -144,8 +148,13 @@ class EditProfileViewController: UIViewController, UITextFieldDelegate, UIImageP
 
     @IBAction func saveButton(_ sender: AnyObject) {
         
-        
-        
+        if let username = usernameTextField.text, let age = ageIndicator.text, let gender = genderTextField.text {
+            let userDictionary = ["username": username, "gender": gender, "age" : age]
+            self.fireBaseRef.child("users").child(Session.currentUserUid).updateChildValues(userDictionary)
+            Session.storeUserSession()
+        }
+
+        dismiss(animated: true, completion: nil)
     }
    
     @IBAction func backButton(_ sender: AnyObject) {

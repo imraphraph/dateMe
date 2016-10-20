@@ -9,15 +9,28 @@
 import UIKit
 import CoreData
 import Firebase
+import FirebaseDatabase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
         FIRApp.configure()
+        
+        FIRDatabase.database().persistenceEnabled = true
+        
+        if(Session.isUserLoggedIn()){
+            let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            // load view controller with the storyboardID of HomeTabBarController
+            let tabBarController = storyBoard.instantiateViewController(withIdentifier: "AppOverview")
+            self.window?.rootViewController = tabBarController
+        }
+        
         return true
     }
 

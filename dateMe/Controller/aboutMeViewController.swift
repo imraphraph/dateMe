@@ -22,7 +22,7 @@ class aboutMeViewController: UIViewController, UITextViewDelegate {
         descriptionTextField.delegate = self
         
         
-        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(SignUpViewController.dismissKeyboard)))
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(aboutMeViewController.dismissKeyboard)))
         
         loadUserData()
     }

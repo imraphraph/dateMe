@@ -18,6 +18,9 @@
 		B56954381DB879500096DB8D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56954371DB879500096DB8D /* ProfileViewController.swift */; };
 		B569543A1DB890200096DB8D /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56954391DB890200096DB8D /* EditProfileViewController.swift */; };
 		B569543C1DB89EC60096DB8D /* aboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B569543B1DB89EC60096DB8D /* aboutMeViewController.swift */; };
+		B569543F1DB8A89F0096DB8D /* Matches.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B569543D1DB8A89F0096DB8D /* Matches.storyboard */; };
+		B56954411DB8A8D50096DB8D /* MatchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56954401DB8A8D50096DB8D /* MatchesTableViewController.swift */; };
+		B56954431DB8AB530096DB8D /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56954421DB8AB530096DB8D /* SwipeViewController.swift */; };
 		B594038E1DB85E8E003E761E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594038D1DB85E8E003E761E /* AppDelegate.swift */; };
 		B59403901DB85E8E003E761E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594038F1DB85E8E003E761E /* ViewController.swift */; };
 		B59403961DB85E8E003E761E /* dateMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B59403941DB85E8E003E761E /* dateMe.xcdatamodeld */; };
@@ -40,6 +43,9 @@
 		B56954371DB879500096DB8D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Controller/ProfileViewController.swift; sourceTree = "<group>"; };
 		B56954391DB890200096DB8D /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditProfileViewController.swift; path = Controller/EditProfileViewController.swift; sourceTree = "<group>"; };
 		B569543B1DB89EC60096DB8D /* aboutMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = aboutMeViewController.swift; path = Controller/aboutMeViewController.swift; sourceTree = "<group>"; };
+		B569543E1DB8A89F0096DB8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Matches.storyboard; sourceTree = "<group>"; };
+		B56954401DB8A8D50096DB8D /* MatchesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchesTableViewController.swift; path = Controller/MatchesTableViewController.swift; sourceTree = "<group>"; };
+		B56954421DB8AB530096DB8D /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwipeViewController.swift; path = Controller/SwipeViewController.swift; sourceTree = "<group>"; };
 		B594038A1DB85E8E003E761E /* dateMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dateMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B594038D1DB85E8E003E761E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B594038F1DB85E8E003E761E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,13 +95,6 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
-		B569542B1DB874E00096DB8D /* Swipe */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Swipe;
-			sourceTree = "<group>";
-		};
 		B59403811DB85E8E003E761E = {
 			isa = PBXGroup;
 			children = (
@@ -118,16 +117,18 @@
 			isa = PBXGroup;
 			children = (
 				B594038D1DB85E8E003E761E /* AppDelegate.swift */,
+				B569541C1DB866970096DB8D /* SignUpViewController.swift */,
+				B594038F1DB85E8E003E761E /* ViewController.swift */,
+				B56954421DB8AB530096DB8D /* SwipeViewController.swift */,
 				B56954371DB879500096DB8D /* ProfileViewController.swift */,
 				B56954391DB890200096DB8D /* EditProfileViewController.swift */,
-				B594038F1DB85E8E003E761E /* ViewController.swift */,
-				B569541C1DB866970096DB8D /* SignUpViewController.swift */,
 				B569543B1DB89EC60096DB8D /* aboutMeViewController.swift */,
-				B569542B1DB874E00096DB8D /* Swipe */,
+				B56954401DB8A8D50096DB8D /* MatchesTableViewController.swift */,
 				B56954221DB86A4D0096DB8D /* Models */,
-				B56954261DB870930096DB8D /* Swipe.storyboard */,
-				B56954231DB8706C0096DB8D /* Profile.storyboard */,
 				B56954321DB8782E0096DB8D /* Main.storyboard */,
+				B56954261DB870930096DB8D /* Swipe.storyboard */,
+				B569543D1DB8A89F0096DB8D /* Matches.storyboard */,
+				B56954231DB8706C0096DB8D /* Profile.storyboard */,
 				B59403971DB85E8E003E761E /* Assets.xcassets */,
 				B59403991DB85E8F003E761E /* LaunchScreen.storyboard */,
 				B594039C1DB85E8F003E761E /* Info.plist */,
@@ -206,6 +207,7 @@
 				B56954341DB8782E0096DB8D /* Main.storyboard in Resources */,
 				B59403981DB85E8E003E761E /* Assets.xcassets in Resources */,
 				B56954281DB870930096DB8D /* Swipe.storyboard in Resources */,
+				B569543F1DB8A89F0096DB8D /* Matches.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56954411DB8A8D50096DB8D /* MatchesTableViewController.swift in Sources */,
 				B59403901DB85E8E003E761E /* ViewController.swift in Sources */,
 				B59403961DB85E8E003E761E /* dateMe.xcdatamodeld in Sources */,
 				B569543C1DB89EC60096DB8D /* aboutMeViewController.swift in Sources */,
@@ -274,6 +277,7 @@
 				B56954381DB879500096DB8D /* ProfileViewController.swift in Sources */,
 				B569541F1DB869910096DB8D /* DataService.swift in Sources */,
 				B569543A1DB890200096DB8D /* EditProfileViewController.swift in Sources */,
+				B56954431DB8AB530096DB8D /* SwipeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +306,14 @@
 				B56954331DB8782E0096DB8D /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B569543D1DB8A89F0096DB8D /* Matches.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B569543E1DB8A89F0096DB8D /* Base */,
+			);
+			name = Matches.storyboard;
 			sourceTree = "<group>";
 		};
 		B59403991DB85E8F003E761E /* LaunchScreen.storyboard */ = {
