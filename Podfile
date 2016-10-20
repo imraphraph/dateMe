@@ -11,5 +11,7 @@ pod 'Firebase/Auth'
 pod 'FirebaseDatabase'
 pod 'Firebase/Storage'
 pod 'SDWebImage', '~>3.8'
+platform :ios, '8.0'
+use_frameworks!
 pod 'UIActivityIndicator-for-SDWebImage'
 end

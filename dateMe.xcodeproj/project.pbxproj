@@ -16,6 +16,8 @@
 		B569542D1DB875000096DB8D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B569542C1DB875000096DB8D /* User.swift */; };
 		B56954341DB8782E0096DB8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56954321DB8782E0096DB8D /* Main.storyboard */; };
 		B56954381DB879500096DB8D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56954371DB879500096DB8D /* ProfileViewController.swift */; };
+		B569543A1DB890200096DB8D /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56954391DB890200096DB8D /* EditProfileViewController.swift */; };
+		B569543C1DB89EC60096DB8D /* aboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B569543B1DB89EC60096DB8D /* aboutMeViewController.swift */; };
 		B594038E1DB85E8E003E761E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594038D1DB85E8E003E761E /* AppDelegate.swift */; };
 		B59403901DB85E8E003E761E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B594038F1DB85E8E003E761E /* ViewController.swift */; };
 		B59403961DB85E8E003E761E /* dateMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B59403941DB85E8E003E761E /* dateMe.xcdatamodeld */; };
@@ -36,6 +38,8 @@
 		B569542C1DB875000096DB8D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
 		B56954331DB8782E0096DB8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B56954371DB879500096DB8D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Controller/ProfileViewController.swift; sourceTree = "<group>"; };
+		B56954391DB890200096DB8D /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditProfileViewController.swift; path = Controller/EditProfileViewController.swift; sourceTree = "<group>"; };
+		B569543B1DB89EC60096DB8D /* aboutMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = aboutMeViewController.swift; path = Controller/aboutMeViewController.swift; sourceTree = "<group>"; };
 		B594038A1DB85E8E003E761E /* dateMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dateMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B594038D1DB85E8E003E761E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B594038F1DB85E8E003E761E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,8 +119,10 @@
 			children = (
 				B56954371DB879500096DB8D /* ProfileViewController.swift */,
 				B594038D1DB85E8E003E761E /* AppDelegate.swift */,
+				B56954391DB890200096DB8D /* EditProfileViewController.swift */,
 				B594038F1DB85E8E003E761E /* ViewController.swift */,
 				B569541C1DB866970096DB8D /* SignUpViewController.swift */,
+				B569543B1DB89EC60096DB8D /* aboutMeViewController.swift */,
 				B569542B1DB874E00096DB8D /* Swipe */,
 				B56954221DB86A4D0096DB8D /* Models */,
 				B56954261DB870930096DB8D /* Swipe.storyboard */,
@@ -260,12 +266,14 @@
 			files = (
 				B59403901DB85E8E003E761E /* ViewController.swift in Sources */,
 				B59403961DB85E8E003E761E /* dateMe.xcdatamodeld in Sources */,
+				B569543C1DB89EC60096DB8D /* aboutMeViewController.swift in Sources */,
 				B56954211DB86A310096DB8D /* Session.swift in Sources */,
 				B569541D1DB866970096DB8D /* SignUpViewController.swift in Sources */,
 				B569542D1DB875000096DB8D /* User.swift in Sources */,
 				B594038E1DB85E8E003E761E /* AppDelegate.swift in Sources */,
 				B56954381DB879500096DB8D /* ProfileViewController.swift in Sources */,
 				B569541F1DB869910096DB8D /* DataService.swift in Sources */,
+				B569543A1DB890200096DB8D /* EditProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +341,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
